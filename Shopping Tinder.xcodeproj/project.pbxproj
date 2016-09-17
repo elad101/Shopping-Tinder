@@ -14,6 +14,7 @@
 		57CDEFDA1D8A21780090B390 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57CDEFD81D8A21780090B390 /* LaunchScreen.storyboard */; };
 		57CDEFE51D8A21790090B390 /* Shopping_TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDEFE41D8A21790090B390 /* Shopping_TinderTests.swift */; };
 		57CDEFF01D8A21790090B390 /* Shopping_TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDEFEF1D8A21790090B390 /* Shopping_TinderUITests.swift */; };
+		57CDF0011D8B469E0090B390 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDF0001D8B469E0090B390 /* RegistrationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		57CDEFEB1D8A21790090B390 /* Shopping TinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shopping TinderUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CDEFEF1D8A21790090B390 /* Shopping_TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shopping_TinderUITests.swift; sourceTree = "<group>"; };
 		57CDEFF11D8A21790090B390 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57CDEFFD1D8A4B970090B390 /* ios_development.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = ios_development.cer; path = ../../../Downloads/ios_development.cer; sourceTree = "<group>"; };
+		57CDF0001D8B469E0090B390 /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 				57CDEFE31D8A21780090B390 /* Shopping TinderTests */,
 				57CDEFEE1D8A21790090B390 /* Shopping TinderUITests */,
 				57CDEFCD1D8A21780090B390 /* Products */,
+				57CDEFFD1D8A4B970090B390 /* ios_development.cer */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +107,7 @@
 				57CDEFD61D8A21780090B390 /* Assets.xcassets */,
 				57CDEFD81D8A21780090B390 /* LaunchScreen.storyboard */,
 				57CDEFDB1D8A21780090B390 /* Info.plist */,
+				57CDF0001D8B469E0090B390 /* RegistrationViewController.swift */,
 			);
 			path = "Shopping Tinder";
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				TargetAttributes = {
 					57CDEFCB1D8A21780090B390 = {
 						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 64MY5N7KGG;
 						ProvisioningStyle = Automatic;
 					};
 					57CDEFDF1D8A21780090B390 = {
@@ -259,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57CDF0011D8B469E0090B390 /* RegistrationViewController.swift in Sources */,
 				57CDEFD21D8A21780090B390 /* ViewController.swift in Sources */,
 				57CDEFD01D8A21780090B390 /* AppDelegate.swift in Sources */,
 			);
@@ -412,11 +419,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64MY5N7KGG;
 				INFOPLIST_FILE = "Shopping Tinder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asael.Shopping-Tinder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e2b5f17-b24d-4d3e-9275-2fb74014e01b";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -426,11 +436,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 64MY5N7KGG;
 				INFOPLIST_FILE = "Shopping Tinder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asael.Shopping-Tinder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "2e2b5f17-b24d-4d3e-9275-2fb74014e01b";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -500,7 +513,7 @@
 				57CDEFF31D8A21790090B390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		57CDEFF41D8A21790090B390 /* Build configuration list for PBXNativeTarget "Shopping Tinder" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +522,7 @@
 				57CDEFF61D8A21790090B390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		57CDEFF71D8A21790090B390 /* Build configuration list for PBXNativeTarget "Shopping TinderTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +531,7 @@
 				57CDEFF91D8A21790090B390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		57CDEFFA1D8A21790090B390 /* Build configuration list for PBXNativeTarget "Shopping TinderUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +540,7 @@
 				57CDEFFC1D8A21790090B390 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

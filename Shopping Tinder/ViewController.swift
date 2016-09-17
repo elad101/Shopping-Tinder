@@ -8,29 +8,41 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController,
+    UIImagePickerControllerDelegate,
+    UINavigationControllerDelegate,
+    UITextFieldDelegate{
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        var shoppingList = ["Apple", "Banana", "Pear"];
-        print(shoppingList);
-        weak var addProductBtn: UIButton!
-        
+
+        weak var addProductBtn: UIImageView!
         
         }
-
-    @IBAction func addProduct(_ sender: UIButton) {
-        self.present(alert, animated: true, completion: nil)
+    @IBOutlet weak var imagePicked: UIImageView!
+    
+    @IBAction func addProduct(_ sender: AnyObject) {
+        //self.present(alert, animated: true, completion: nil)
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.camera) {
+            var imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.camera;
+            imagePicker.allowsEditing = false
+            self.present(imagePicker, animated: true, completion: nil)
+        }
         
     }
-    let alert = UIAlertController(title: "Alert", message: "Message", preferredStyle: UIAlertControllerStyle.alert)
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+        imagePicked.image = info[UIImagePickerControllerOriginalImage] as! UIImage?
+        self.dismiss(animated: true, completion: nil)
+
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
+
 
