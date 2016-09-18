@@ -10,8 +10,7 @@ import UIKit
 
 class ViewController: UIViewController,
     UIImagePickerControllerDelegate,
-    UINavigationControllerDelegate,
-    UITextFieldDelegate{
+    UINavigationControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
