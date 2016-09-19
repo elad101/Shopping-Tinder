@@ -53,6 +53,14 @@ UITextFieldDelegate{
         userEmailTextField.text = textField1.text
         friendEmailTextField.text = textField2.text
     }
+//    func md5(string: String) -> [UInt8] {
+//        var digest = [UInt8](count: Int(CC_MD5_DIGEST_LENGTH), repeatedValue: 0)
+//        if let data = string.data(usingEncoding: NSUTF8StringEncoding) {
+//            CC_MD5(data.bytes, CC_LONG(data.length), &digest)
+//        }
+//        
+//        return digest
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
