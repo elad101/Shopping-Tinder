@@ -198,7 +198,7 @@
 				TargetAttributes = {
 					57CDEFCB1D8A21780090B390 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 64MY5N7KGG;
+						DevelopmentTeam = 23Y35KLQ6Y;
 						ProvisioningStyle = Automatic;
 					};
 					57CDEFDF1D8A21780090B390 = {
@@ -419,8 +419,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 64MY5N7KGG;
+				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 23Y35KLQ6Y;
 				INFOPLIST_FILE = "Shopping Tinder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -436,8 +437,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 64MY5N7KGG;
+				CODE_SIGN_IDENTITY = "";
+				DEVELOPMENT_TEAM = 23Y35KLQ6Y;
 				INFOPLIST_FILE = "Shopping Tinder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
