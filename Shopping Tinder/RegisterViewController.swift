@@ -21,16 +21,16 @@ UITextFieldDelegate{
         "\n friend's Email: "+friendEmailTextField.text!
         if (isValidEmail(testStr: userEmailTextField.text!) && isValidEmail(testStr: friendEmailTextField.text!)){
             
-            let alert = UIAlertController(title: "Oops!", message:message, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
-            self.present(alert, animated: true){}
+//            let alert = UIAlertController(title: "Signup", message:message, preferredStyle: .alert)
+//            alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
+//            self.present(alert, animated: true){}
         }
         else{
-            let alert = UIAlertController(title: "Oops!", message:"Email isn't valid", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Signup", message:"Email isn't valid", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
             self.present(alert, animated: true){}
+            
         }
-        
         
 
     }

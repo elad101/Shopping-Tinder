@@ -47,9 +47,9 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tea-je-3CA">
-                                <frame key="frameInset" minX="293" minY="348" width="46" height="30"/>
+                                <frame key="frameInset" minX="281" minY="348" width="67" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Signup"/>
                                 <connections>
                                     <action selector="actionTriggered:" destination="iHt-rx-I6G" eventType="touchUpInside" id="Dj7-A7-u6r"/>
                                     <segue destination="BYZ-38-t0r" kind="show" id="31e-Ol-g4A"/>
@@ -57,6 +57,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
                     </view>
                     <connections>
                         <outlet property="friendEmailTextField" destination="fzC-0u-XAE" id="5il-RW-lCK"/>
@@ -80,14 +84,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shopping List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Atd-83-Hwu">
-                                <frame key="frameInset" minX="135" minY="28" width="105" height="21"/>
+                                <frame key="frameInset" minX="135" minY="32" width="105" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FHU-7i-OBV">
-                                <frame key="frameInset" minX="329" minY="19" width="30" height="30"/>
+                                <frame key="frameInset" minX="331" minY="27" width="30" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="+"/>
                                 <connections>
@@ -102,12 +106,20 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="415"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0f-dU-6dL">
+                                        <rect key="frame" x="151" y="450" width="73" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Send item "/>
+                                        <connections>
+                                            <action selector="sendItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R2J-6H-IWB"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpL-jA-TBj">
-                                <frame key="frameInset" minX="24" minY="24" width="30" height="30"/>
+                                <frame key="frameInset" minX="24" minY="27" width="49" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="&lt;"/>
+                                <state key="normal" title="Logout"/>
                                 <connections>
                                     <segue destination="iHt-rx-I6G" kind="show" id="Yxz-EA-PZf"/>
                                 </connections>
@@ -121,7 +133,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="351" y="107"/>
+            <point key="canvasLocation" x="349.60000000000002" y="106.59670164917542"/>
         </scene>
     </scenes>
 </document>
