@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		576E296F1D8FD0D500B5D686 /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 576E296E1D8FD0D500B5D686 /* bg.png */; };
 		57823C381D8F313D009CB5D3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57823C371D8F313D009CB5D3 /* RegisterViewController.swift */; };
 		57CDEFD01D8A21780090B390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDEFCF1D8A21780090B390 /* AppDelegate.swift */; };
 		57CDEFD21D8A21780090B390 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CDEFD11D8A21780090B390 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		576E296E1D8FD0D500B5D686 /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg.png; path = ../../../../Downloads/bg.png; sourceTree = "<group>"; };
 		57823C371D8F313D009CB5D3 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		57CDEFCC1D8A21780090B390 /* Shopping Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Shopping Tinder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CDEFCF1D8A21780090B390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				57CDEFCF1D8A21780090B390 /* AppDelegate.swift */,
 				57CDEFD11D8A21780090B390 /* ViewController.swift */,
+				576E296E1D8FD0D500B5D686 /* bg.png */,
 				57823C371D8F313D009CB5D3 /* RegisterViewController.swift */,
 				57CDEFD31D8A21780090B390 /* Main.storyboard */,
 				57CDEFD61D8A21780090B390 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 			files = (
 				57CDEFDA1D8A21780090B390 /* LaunchScreen.storyboard in Resources */,
 				57CDEFD71D8A21780090B390 /* Assets.xcassets in Resources */,
+				576E296F1D8FD0D500B5D686 /* bg.png in Resources */,
 				57CDEFD51D8A21780090B390 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,14 +424,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_ENTITLEMENTS[sdk=*]" = "";
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 23Y35KLQ6Y;
 				INFOPLIST_FILE = "Shopping Tinder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asael.Shopping-Tinder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2e2b5f17-b24d-4d3e-9275-2fb74014e01b";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -437,14 +441,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = 23Y35KLQ6Y;
 				INFOPLIST_FILE = "Shopping Tinder/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.asael.Shopping-Tinder";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2e2b5f17-b24d-4d3e-9275-2fb74014e01b";
+				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

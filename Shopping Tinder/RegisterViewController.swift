@@ -15,6 +15,7 @@ UITextFieldDelegate{
     
     @IBOutlet weak var userEmailTextField: UITextField!
     @IBOutlet weak var friendEmailTextField: UITextField!
+    @IBOutlet weak var signupBackgroundImage: UIImageView!
     
     @IBAction func actionTriggered(_ sender: AnyObject) {
         let message = "Yours Email: "+userEmailTextField.text! +
@@ -58,6 +59,7 @@ UITextFieldDelegate{
         userEmailTextField.delegate = self
         friendEmailTextField.delegate = self
         
+
     }
     
     override func didReceiveMemoryWarning() {
