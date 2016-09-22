@@ -130,7 +130,7 @@ class ViewController: UIViewController,
         
         let uploadRequest = AWSS3TransferManagerUploadRequest()
         uploadRequest?.bucket = "shoppingimages"
-        uploadRequest?.key = "abcdefgh" //Make this random
+        uploadRequest?.key = String(hashableString) //Make this random
         uploadRequest?.body = fileUrl as URL!
         uploadRequest?.contentType = "image/png"
         
@@ -184,7 +184,7 @@ class ViewController: UIViewController,
         
         let uploadRequest = AWSS3TransferManagerUploadRequest()
         uploadRequest?.bucket = "shoppingimages"
-        uploadRequest?.key = "abcdefgh" //Make this random
+        uploadRequest?.key = String(hashableString) //Make this random
         uploadRequest?.body = fileUrl as URL!
         uploadRequest?.contentType = "image/png"
         
