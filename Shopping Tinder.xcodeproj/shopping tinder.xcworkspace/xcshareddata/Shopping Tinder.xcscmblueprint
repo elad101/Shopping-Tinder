@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DECDD314712D6A82358A672363AE3A9451CB5169",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DECDD314712D6A82358A672363AE3A9451CB5169" : 9223372036854775807,
+    "CBD046E66E0B5BC702038FC17B64848887060CDA" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A6A032D9-27BA-449F-B006-814F5A747D44",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DECDD314712D6A82358A672363AE3A9451CB5169" : "Shopping-Tinder\/",
+    "CBD046E66E0B5BC702038FC17B64848887060CDA" : "..\/Frameworks\/Bolts-Swift"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Shopping Tinder",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Shopping Tinder.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/BoltsFramework\/Bolts-Swift.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "CBD046E66E0B5BC702038FC17B64848887060CDA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/elad101\/Shopping-Tinder.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DECDD314712D6A82358A672363AE3A9451CB5169"
+    }
+  ]
+}
