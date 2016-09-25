@@ -10,6 +10,7 @@ import UIKit
 import Foundation
 
 
+
 class RegisterViewController: UIViewController,
 UITextFieldDelegate{
     
@@ -21,7 +22,6 @@ UITextFieldDelegate{
         let message = "Yours Email: "+userEmailTextField.text! +
         "\n friend's Email: "+friendEmailTextField.text!
         if (isValidEmail(testStr: userEmailTextField.text!) && isValidEmail(testStr: friendEmailTextField.text!)){
-            
 //            let alert = UIAlertController(title: "Signup", message:message, preferredStyle: .alert)
 //            alert.addAction(UIAlertAction(title: "OK", style: .default) { _ in })
 //            self.present(alert, animated: true){}
@@ -53,6 +53,7 @@ UITextFieldDelegate{
         userEmailTextField.text = textField1.text
         friendEmailTextField.text = textField2.text
     }
+    
 //    func md5(string: String) -> [UInt8] {
 //        var digest = [UInt8](count: Int(CC_MD5_DIGEST_LENGTH), repeatedValue: 0)
 //        if let data = string.data(usingEncoding: NSUTF8StringEncoding) {
