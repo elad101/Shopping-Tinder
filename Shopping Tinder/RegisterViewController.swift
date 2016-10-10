@@ -35,6 +35,7 @@ UITextFieldDelegate{
         
 
     }
+    
     func isValidEmail(testStr:String) -> Bool {
         // print("validate calendar: \(testStr)")
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
@@ -70,7 +71,26 @@ UITextFieldDelegate{
         
 
     }
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        let width = CGFloat(1.0)
+        let border = CALayer()
+        let border2 = CALayer()
+        border.borderColor = UIColor.gray.cgColor
+        border.frame = CGRect(x: 0, y: userEmailTextField.frame.size.height - width, width:  userEmailTextField.frame.size.width, height: userEmailTextField.frame.size.height)
+        
+        border.borderWidth = width
+        border2.borderColor = UIColor.gray.cgColor
+        border2.frame = CGRect(x: 0, y: userEmailTextField.frame.size.height - width, width:  userEmailTextField.frame.size.width, height: userEmailTextField.frame.size.height)
+        
+        border2.borderWidth = width
+        userEmailTextField.layer.addSublayer(border)
+        userEmailTextField.layer.masksToBounds = true
+        
+        friendEmailTextField.layer.addSublayer(border2)
+        friendEmailTextField.layer.masksToBounds = true
+
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
