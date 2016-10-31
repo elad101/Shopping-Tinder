@@ -16,21 +16,23 @@ class ViewController: UIViewController,
     UIImagePickerControllerDelegate,
     UINavigationControllerDelegate{
     
+    @IBOutlet weak var sendItemBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
         weak var addProductBtn: UIImageView!
-        
 
         getFileListFromS3Bucket(bucketName: "shoppingimages")
         
+        sendItemBtn.isHidden = true
         }
     @IBOutlet weak var imagePicked: UIImageView!
     
     @IBAction func addProduct(_ sender: AnyObject) {
         //Create the AlertController
-        let actionSheetController: UIAlertController = UIAlertController(title: "Action Sheet", message: "Swiftly Now! Choose an option!", preferredStyle: .actionSheet)
+        sendItemBtn.isHidden = false
+        let actionSheetController: UIAlertController = UIAlertController(title: "Shopping Tinder", message: "Add an Item", preferredStyle: .actionSheet)
         
         //Create and add the Cancel action
         let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel) { action -> Void in
@@ -98,6 +100,7 @@ class ViewController: UIViewController,
     }
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         imagePicked.image = info[UIImagePickerControllerOriginalImage] as! UIImage?
+        
         self.dismiss(animated: true, completion: nil)
 
     }
