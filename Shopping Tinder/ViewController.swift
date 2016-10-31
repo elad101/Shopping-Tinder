@@ -22,6 +22,9 @@ class ViewController: UIViewController,
 
         weak var addProductBtn: UIImageView!
         
+
+        getFileListFromS3Bucket(bucketName: "shoppingimages")
+        
         }
     @IBOutlet weak var imagePicked: UIImageView!
     
@@ -104,6 +107,71 @@ class ViewController: UIViewController,
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
+    //DO NOT USE!!!
+    func getAWSBucketList() {
+        
+        print("In getAWSBucketList()")
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.usEast1,
+                                                                identityPoolId:"us-east-1:3042c93b-519f-4bcf-b62d-bdf3fbbd50a2")
+        
+        let configuration = AWSServiceConfiguration(region:.usEast1, credentialsProvider:credentialsProvider)
+        
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+        
+        AWSS3.register(with: configuration!, forKey: "defaultKey")
+        let s3 = AWSS3.s3(forKey: "defaultKey")
+        
+        let listRequest : AWSRequest = AWSRequest()
+        
+        AWSS3.default().listBuckets(listRequest).continue(successBlock: { (task) -> AnyObject? in
+            print("getAWSBucketList::call returned")
+            let listObjectsOutput = task.result;
+            
+            return nil
+        })
+        
+        print("Leaving getAWSBucketList()")
+    }
+    
+
+    //Gets the list of objects in an S3 bucket specified by the bucket name.
+    func getFileListFromS3Bucket(bucketName : String) {
+        
+        //Logic for this function
+        //1. Get the bucket name from the logged in user name + the counterpart user name hashof(a@a.com + b@b.com)
+        //2. Access S3 and get the list of all files waiting to be reviewed for the specific counterpart.
+        
+        print("In getFileListFromS3Bucket()")
+        
+        let credentialsProvider = AWSCognitoCredentialsProvider(regionType:.usEast1,
+                                                                identityPoolId:"us-east-1:3042c93b-519f-4bcf-b62d-bdf3fbbd50a2")
+        
+        let configuration = AWSServiceConfiguration(region:.usEast1, credentialsProvider:credentialsProvider)
+        
+        AWSServiceManager.default().defaultServiceConfiguration = configuration
+
+        AWSS3.register(with: configuration!, forKey: "defaultKey")
+        let s3 = AWSS3.s3(forKey: "defaultKey")
+        
+        let listRequest: AWSS3ListObjectsRequest = AWSS3ListObjectsRequest()
+        listRequest.bucket = bucketName//"shoppingimages"
+        
+        s3.listObjects(listRequest).continue(successBlock: { (task) -> AnyObject? in
+            print("call returned")
+            let listObjectsOutput = task.result; //The list of objects in the bucket.
+            for object in (listObjectsOutput?.contents)! {
+                
+                print("Key: " + object.key!)
+            }
+            
+            return nil
+        })
+        
+        print("Out of getFileListFromS3Bucket()")
+    }
     
     func uploadToS3AndReturnTask(image : UIImage) -> AWSTask<AnyObject> {
         
