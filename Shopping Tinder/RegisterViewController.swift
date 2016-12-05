@@ -81,7 +81,7 @@ UITextFieldDelegate{
         
         border.borderWidth = width
         border2.borderColor = UIColor.gray.cgColor
-        border2.frame = CGRect(x: 0, y: userEmailTextField.frame.size.height - width, width:  userEmailTextField.frame.size.width, height: userEmailTextField.frame.size.height)
+        border2.frame = CGRect(x: 0, y: friendEmailTextField.frame.size.height - width, width:  friendEmailTextField.frame.size.width, height: friendEmailTextField.frame.size.height)
         
         border2.borderWidth = width
         userEmailTextField.layer.addSublayer(border)

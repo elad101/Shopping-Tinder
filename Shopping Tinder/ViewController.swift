@@ -26,6 +26,7 @@ class ViewController: UIViewController,
         getFileListFromS3Bucket(bucketName: "shoppingimages")
         
         sendItemBtn.isHidden = true
+        getFileListFromS3Bucket(bucketName: "shoppingimages");
         }
     @IBOutlet weak var imagePicked: UIImageView!
     
